@@ -1,1 +1,1 @@
-[cv.pdf](cv.pdf)
+[cv.pdf](https://danielcaballero88.github.io/cv/cv.pdf)
