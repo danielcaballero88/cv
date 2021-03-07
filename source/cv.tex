@@ -1,0 +1,209 @@
+\documentclass[%singlesided,
+               doublesided,
+               paper=a4,
+               fontsize=10pt
+              ]{my-cv}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% set geometry
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\setlength\highlightwidth{8cm}
+\setlength\headerheight{4cm}            % note that margintop gets added to this value, i.e. the header bar is 5cm
+\setlength\marginleft{1cm}
+\setlength\marginright{\marginleft}      % needs to be 1.5 times to be actually equal. why?
+\setlength\margintop{1cm}
+\setlength\marginbottom{1cm}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% FONTS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\RequirePackage{fontspec}
+\setmainfont{Carlito}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% COLORS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\colorlet{highlightbarcolor}{lightgray}
+\colorlet{headerbarcolor}{darkgray}
+
+\definecolor{my-blue}{RGB}{14, 95, 106}
+
+\colorlet{headerfontcolor}{white}
+\colorlet{accent}{my-blue}
+\colorlet{heading}{black}
+\colorlet{emphasis}{black}
+\colorlet{body}{black}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% set document
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+\name{
+    Daniel Caballero%\\[-0.4em]
+    %\LARGE{(Engineer / Data Analyst)}
+}
+\tagline{
+    Mechanical Engineer with a PhD in Computational Mechanics and a passion for\\
+    Information Technology. I am passionate about learning and applying new technologies\\to find better solutions for different types of problems. I believe that AI and Big Data\\represent the future of many disciplines, and I look forward to be a part of that future.\\
+    I have experience as a CAE Engineer, Project Manager, Programmer, and Data Analyst.}
+\photo[round]{../images/DSCN0993_edit_gphotos.JPG}{\dimexpr \headerheight-\marginbottom}   % make photo exactly match the header with margintop/marginright/marginbottom as margin
+
+\makeheader
+
+\highlightbar{
+
+    \section{Contact}
+    
+    Full Name: Daniel Enrique Caballero\\
+    Age: 32\\
+    From: Argentina\\[1em]
+    \email{danielcaballero88@gmail.com}
+    \phone{+46 764 367 221}
+    \location{Stockholm, Sweden}\\[0.0em]
+    \github{@danielcaballero88}{https://github.com/danielcaballero88}
+    \linkedin{Daniel Caballero}{https://www.linkedin.com/in/daniel-caballero-47371553/}
+    %\homepage{.com}{https://www.nicokrieger.de}
+    
+    \section{Skills}
+    
+    \skillsection{Programming}
+    \skill{Python}{5}
+    \skill{Bash}{4}
+    \skill{C++}{2}
+    \skill{Fortran}{5}
+    \skill{MATLAB}{4}
+    \skill{HTML/CSS}{3}
+    \skill{JavaScript}{2}
+    \skill{LaTeX}{4}
+    
+    \vspace{0.5em}
+    \skillsection{Operating Systems}
+    \skill{Linux}{5}
+    \skill{Windows}{4}
+    \skill{MacOS}{2}
+    
+    \vspace{0.5em}
+    \skillsection{Software \& Tools}
+    \skill{Visualization}{5}
+    (e.g. matplotlib, seaborn, ...)\\
+    \skill{Data handling/analysis}{5}
+    (e.g. numpy, scipy, pandas, ...)\\
+    \skill{Git}{5}\\
+    \skill{Office}{4}\\
+    \skill{Modeling \& Simulation}{4}\\
+    (e.g. Ansys Fluent, SolidWorks, ...)
+    
+    %\vspace{0.5em}
+    %\skillsection{Another skill subsection header}
+    %You can also put simply text here without the dots.
+    
+    \vspace{0.5em}
+    \skillsection{Languages}
+    \skill{Spanish (native)}{5}
+    \skill{English}{5}
+    \skill{Portuguese}{4}
+    \skill{Italian}{3}
+    \skill{Swedish}{2}
+    \bigskip
+    
+    %\section{Certificates}
+    %\simpleskill{AWS certified cloud practitioner}
+
+}
+\mainbar{
+    %\section{About this template}
+    %Section are set in bold face. An optional parameter of \texttt{\textbackslash section} takes a symbol to add in front of the text. This option is used in the jobs and education sections below.
+    
+    \section[\faGears]{Work history}
+    \job{10/2020}
+        {Wondersign, California, USA}
+        {Data Analyst}
+        {Clean and normalize big datasets to make them available in production. The process involves writing Python scripts and notebooks for scraping/mining, merging, parsing, re-formating and clustering data.}
+    \job{04/2016 - 08/2020}
+        {GIAC, Mar del Plata, Argentina}
+        {CAE Engineer}
+        {Build models and perform simulations in the fields of Computational Fluid Dynamics \& Solid Mechanics. Main tools: Ansys Fluent and Simulia Abaqus for simulations; Paraview, MATLAB and Python for Data Analysis \& Visualization of results.}
+    \job{2014 - 2016}
+        {La Paloma Brewing\\Mar del Plata, Argentina}
+        {Sales \& Logistics Manager}
+        {Multi-role in a growing brewing company. Manage stock and coordinate shipments. Treat with customers and distributors. Assist in project management and production scheduling.}
+    \job{2012 - 2014}
+        {Ternium, Buenos Aires, Argentina}
+        {Project Engineer}
+        {Supervise engineering projects. Design plan of action, write technical specifications, draw blue-prints, assign schedule. Coordinate execution, solve emerging problems in-site.}
+    
+    \section[\faMortarBoard]{Education}
+    \job{2007 - 2012}
+        {National University of Mar del Plata}
+        {Mechanical Engineering}
+        {Graduated with the best average grade of my class (8.62 / 10), gaining a Distinctive GPA Mention.}
+    \job{2016 - 2020}
+        {National University of Mar del Plata}
+        {PhD in Computational Mechanics}
+        {Specialized in Finite Element Analysis (FEA) and Computational Fluid Dynamics (CFD).}
+
+    %\section{Achievements, honours and awards}
+    %\achievement{My first achievement}
+    %\achievement{My second achievement}
+
+    \section{General Skills}
+    \smallskip % additional skip because tag outlines use up space
+    \tag{Logical Thinking}
+    \tag{Problem Solving}
+    \tag{Management}
+    \tag{Communication}
+    \tag{Multi-Tasking}
+    \tag{Research}
+    \tag{Documentation}
+    \tag{Data Mining}
+    \tag{Data Management}
+    \tag{Data Modeling}
+    \tag{Data Analysis}
+    \tag{Big Data}
+    \tag{Data Visualization}
+    \tag{Quantitative Analysis}
+    \tag{Programming}
+    \tag{Scripting}
+    \tag{Machine Learning}
+    \tag{Modeling}
+    \tag{Simulation}
+    \tag{Python}
+    \tag{Numpy}
+    \tag{Scipy}
+    \tag{MATLAB}
+    \tag{Excel}
+    \tag{Excel VBA}
+    \tag{SQL}
+    \tag{UNIX}
+    \tag{Ansys}
+    \tag{SolidWorks}
+    
+    \medskip
+    %Tags must be ordered by hand with newlines to get a nice layout, especially for long tags.
+    
+    \section{My Time}
+    % This is taken from AltaCV
+    % see https://github.com/liantze/AltaCV for details
+    \wheelchart{1.5cm}{0.5cm}{% outer and inner diameter
+        %7/8em/accent!20/Sleep,          % comma-separated list of
+        6/8em/accent!40/Work,    % fraction of 24 / line length / color / label
+        2/8em/accent/Learning New Technologies,
+        3/8em/accent!80/Family \& Friends,          % here, the color is shades of the accent color
+        2/8em/accent!60/Sports \& Training,
+        2/8em/accent/Movies \& Series
+    }
+}
+\makebody
+
+\end{document}
+
